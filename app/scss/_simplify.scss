@@ -1,0 +1,125 @@
+.simplify {
+  position: relative;
+  background-color: $brightRed;
+  text-align: center;
+  height: 450px;
+  @include breakpoint-up(large) {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    height: 13.6875rem;
+  }
+
+  .box {
+    overflow: hidden;
+  }
+
+  &__shape1 {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    border-radius: 150px;
+    top: 10%;
+    background-color: $veryPaleRed;
+    opacity: 0.1;
+    transform: rotate(40deg);
+    left: -56%;
+    @include breakpoint-up(large) {
+      position: absolute;
+      left: 30%;
+      top: -40%;
+      opacity: 0.1;
+      height: 550px;
+      background-color: $veryPaleRed;
+      width: 280px;
+      border-radius: 170px;
+      transform: rotate(40deg);
+      // z-index: -1000;
+    }
+  }
+
+  &__shape2 {
+    display: none;
+    @include breakpoint-up(large) {
+      display: block;
+      position: absolute;
+      height: 525px;
+      width: 300px;
+      background-color: $veryPaleRed;
+      opacity: 0.1;
+      right: -5%;
+      top: -150%;
+      border-radius: 160px;
+      transform: rotate(35deg);
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    @include breakpoint-up(large) {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      // justify-content: flex-end
+      margin: auto;
+      align-items: center;
+      height: 13.6875rem;
+
+      width: 100%;
+    }
+
+    &__text {
+      width: 95%;
+      margin: 0 auto;
+      @include breakpoint-up(large) {
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        width: 45%;
+
+        margin: 0 auto;
+        flex: 1;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-size: 700;
+
+        color: #fff;
+      }
+    }
+
+    &__button-white {
+      @include breakpoint-up(large) {
+        position: absolute;
+        right: 0%;
+        flex: 1;
+        z-index: 1000;
+        // margin-top: -40px;
+      }
+      button {
+        background-color: #fff !important;
+        color: $brightRed !important;
+        border-radius: 50px;
+        padding: 0.875rem 1.875rem;
+        border: none;
+        // margin-top: 1.5625rem;
+
+        @include breakpoint-up(large) {
+          background-color: #fff !important;
+          color: $brightRed !important;
+          border-radius: 50px;
+          padding: 0.875rem 1.875rem;
+          border: none;
+          margin-top: 0;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

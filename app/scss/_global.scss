@@ -1,0 +1,99 @@
+// @font-face {
+//   font-family: "Vietnam Pro thick";
+//   src: url("/manage-landing-page-master/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf")
+//     format("truetype");
+// }
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  font-size: $font-mid;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $darkBlue;
+}
+
+//flexbox
+.flex {
+  display: flex;
+
+  &-js-sb {
+    justify-content: space-between;
+  }
+
+  &-js-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+//Buttons
+button,
+.button {
+  &:not(.dots__dot, .button-white button) {
+    padding: 0.875rem 1.875rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: $brightRed;
+    font-weight: 700;
+    transition: opacity 1s;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+//Visibility
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.become-small {
+  @include breakpoint-down(small) {
+    transform: rotate(-20deg);
+    background-color: red;
+  }
+}

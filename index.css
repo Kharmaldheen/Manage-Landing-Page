@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Vietnam Pro thick";
+  src: url("/manage-landing-page-master/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Vietnam Pro light";
+  src: url("/manage-landing-page-master/Be_Vietnam_Pro/BeVietnamPro-Light.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Vietnam Pro thick", sans-serif;
+  height: 100vh;
+  background-color: #ffffff;
+  font-size: 16px;
+  /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(233, 12%, 13%);
+}
+
+/* .container {
+  position: relative;
+}
+
+.shape2 {
+  position: absolute;
+  left: 0;
+  height: 900px;
+  width: 300px;
+  background-color: hsl(13, 100%, 96%);
+  transform: rotate(40deg);
+  border-radius: 150px;
+  margin-left: -190px;
+  margin-top: -400px;
+} */
+
+.container {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  width: 50vw;
+  height: 1100px;
+  overflow-x: hidden;
+}
+
+.shape {
+  position: absolute;
+  right: 0;
+  height: 350px;
+  width: 900px;
+  background-color: hsl(13, 100%, 96%);
+  transform: rotate(-40deg);
+  margin-top: 10px;
+  margin-right: -190px;
+  border-radius: 160px;
+  z-index: -1000;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  margin-top: 15px;
+}
+
+.link-list {
+  list-style: none;
+  display: flex;
+}
+
+.link-list li {
+  margin-right: 40px;
+}
+
+.link-list li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.header .Get-started {
+  margin-left: 30px;
+  margin-right: -50px;
+  background: transparent;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 1s;
+}
+
+.header .Get-started:hover {
+  opacity: 0.6;
+}
+
+.Get-started.first-section {
+  background: transparent;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 1s;
+}
+
+.Get-started.first-section:hover {
+  opacity: 0.6;
+}
+
+.partA {
+  margin-top: 120px;
+}
+
+.intro-talk h1 {
+  margin: 40px 0 20px 0;
+  color: hsl(233, 12%, 13%);
+
+  font-size: 60px;
+}
+
+.intro-talk p {
+  color: hsl(227, 12%, 61%);
+  margin-top: 10px;
+}
+
+.intro-talk .Get-started {
+  margin-top: 20px;
+}
+
+.illustration-image img {
+  height: 450px;
+  margin-left: 100px;
+}
+
+.partB {
+  margin-top: 80px;
+}
+
+.manage h1 {
+  font-size: 45px;
+}
+
+.manage p {
+  color: hsl(227, 12%, 61%);
+}
+
+.main-container {
+  margin-left: 250px;
+}
+
+.main-container .content {
+  display: flex;
+  margin: 20px 0;
+}
+
+.main-container .content p {
+  color: hsl(227, 12%, 61%);
+}
+
+.content-btn {
+  height: 27px;
+  margin: 18px 15px 0 0;
+  padding: 5px 17px;
+  text-align: center;
+  border: none;
+  background-color: hsl(12, 88%, 59%);
+  color: #fff;
+  border-radius: 15px;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+.text p {
+  width: 100%;
+}
+
+.container2 {
+  position: relative;
+}
+
+.shape2 {
+  position: absolute;
+  left: 0;
+  height: 900px;
+  width: 300px;
+  background-color: hsl(13, 100%, 96%);
+  transform: rotate(40deg);
+  border-radius: 150px;
+  margin-left: -190px;
+  margin-top: -310px;
+  z-index: -100;
+}
+
+.partC {
+  margin-top: 50px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.partC h1 {
+  text-align: center;
+  font-size: 45px;
+
+  margin-bottom: 85px;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  background-color: #fafafa;
+  margin: 20px;
+  padding: 15px 30px;
+  min-width: 530px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__author img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: -60px 0 0 182px;
+}
+
+.testimonial__name {
+  text-align: center;
+  padding-top: 26px;
+  font-size: 16px;
+}
+
+.testimonial__text {
+  text-align: center;
+  width: 100%;
+  margin-left: -15px;
+  color: hsl(227, 12%, 61%);
+}
+
+.partC .Get-started {
+  background: transparent;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  transition: opacity 1s;
+}
+
+.partC .Get-started:hover {
+  opacity: 0.6;
+}
+
+.partD {
+  background-color: hsl(12, 88%, 59%);
+  height: 220px;
+  margin-top: 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape3 {
+  position: absolute;
+  left: 26%;
+  top: 0;
+  height: 700px;
+  width: 260px;
+  border-radius: 120px;
+  background-color: hsl(13, 100%, 96%);
+  opacity: 0.1;
+  transform: rotate(49deg);
+  margin-top: -135px;
+}
+
+.shape4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: hsl(13, 100%, 96%);
+  opacity: 0.1;
+  transform: rotate(-15deg);
+  height: 350px;
+  width: 350px;
+  border-radius: 490px;
+  margin-top: -180px;
+  margin-right: -50px;
+}
+
+.partD h1 {
+  color: #fff;
+  font-size: 45px;
+  margin-top: 60px;
+}
+
+.partD button {
+  float: right;
+  margin-top: 75px;
+
+  background: transparent;
+  background-color: #fff;
+  border: none;
+
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  text-align: center;
+  color: hsl(12, 88%, 59%);
+  transition: opacity 1s;
+}
+
+.partD button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: black;
+  height: 280px;
+}
+
+.footer-container {
+  margin-top: 70px;
+}
+
+.logo-links {
+  margin-top: 70px;
+}
+
+.logo-links a {
+  color: #fff;
+  transition: color 1s;
+  margin: 0 4px;
+  letter-spacing: 2px;
+}
+
+.logo-links a:hover {
+  color: hsl(12, 88%, 59%);
+}
+
+.nav-links-parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin-bottom: 8px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Vietnam Pro light" sans-serif;
+  transition: color 1s;
+}
+
+.nav-links li a:hover {
+  color: hsl(12, 88%, 59%);
+}
+
+.search-copy {
+  margin-top: 15px;
+}
+
+.search input {
+  background: #fff;
+  border: 1.5px solid hsl(12, 88%, 59%);
+  padding: 7px 10px;
+  font-weight: 600px;
+  font-family: "Vietnam Pro thick";
+  border-radius: 15px;
+  color: hsl(12, 88%, 59%);
+}
+
+.search input::placeholder {
+  color: hsl(12, 88%, 59%);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search button {
+  border: none;
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 15px;
+  padding: 8px 14px;
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.search button:hover {
+  background-color: hsl(12, 88%, 74%);
+}
+
+.message {
+  color: hsl(12, 88%, 59%);
+  font-size: 13px;
+  margin-left: 12px;
+}
+
+.copy {
+  white-space: nowrap;
+}
+.copy p {
+  color: hsl(227, 12%, 61%);
+  margin-left: 62px;
+  margin-top: 44px;
+  font-size: 14px;
+}

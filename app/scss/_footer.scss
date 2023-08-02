@@ -1,0 +1,210 @@
+.footer {
+  position: relative;
+  height: 37.3125rem;
+  background-color: #000;
+  @include breakpoint-up(large) {
+    position: relative;
+    height: 15.625rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    @include breakpoint-up(large) {
+      margin-top: 0;
+      margin-left: 55px;
+      display: flex;
+      flex-direction: row;
+      gap: 0 5rem;
+    }
+
+    &__logo {
+      order: 3;
+      margin-top: 3.625rem;
+      @include breakpoint-up(large) {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        // text-align: left;
+      }
+
+      img {
+        margin-top: 80px;
+        // background-color: #fff;
+        @include breakpoint-up(large) {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      .logo-links {
+        position: absolute;
+        top: 60%;
+        margin-left: -59px;
+        @include breakpoint-up(large) {
+          position: relative;
+          margin-top: 40px;
+          margin-left: 5px;
+          // margin-bottom: 20px;
+        }
+        & a {
+          // text-align: center;
+          color: #fff;
+          margin-right: 1rem;
+          margin-left: 5px;
+          font-size: 2rem;
+          // margin: 0 auto;
+          // padding-right: 1rem;
+          // order: 1;
+
+          @include breakpoint-up(large) {
+            color: #fff;
+            margin-right: 1rem;
+            margin-left: 0;
+            font-size: 1rem;
+            transition: 1s all;
+            width: 100%;
+          }
+
+          &:hover {
+            color: $brightRed;
+          }
+        }
+      }
+    }
+
+    &__links {
+      order: 2;
+      display: flex;
+      gap: 0 4rem;
+      margin-top: 58px;
+      margin-left: -40px;
+      // margin: 0 auto;
+
+      @include breakpoint-up(large) {
+        order: 2;
+        margin-left: 0;
+        margin-top: 40px;
+        padding-top: 10px;
+        display: flex;
+        gap: 0 14rem;
+      }
+
+      .nav-links {
+        @include breakpoint-up(large) {
+        }
+
+        & li {
+          margin-bottom: 10px;
+
+          @include breakpoint-up(large) {
+            margin-bottom: 14px;
+          }
+        }
+
+        & li a {
+          color: #fff;
+          transition: 1s all;
+          font-size: 0.875rem;
+
+          @include breakpoint-up(large) {
+            color: #fff;
+            font-size: 16px;
+            transition: 1s all;
+          }
+
+          &:hover {
+            color: $brightRed;
+          }
+        }
+      }
+    }
+
+    &__search {
+      order: 1;
+      @include breakpoint-up(large) {
+        order: 3;
+        // margin-top: 3.75rem;
+      }
+      .search {
+        @include breakpoint-up(large) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        input {
+          padding: 0.875rem 2rem;
+          border-radius: 50px;
+          width: 77%;
+          font-size: 0.875rem;
+          @include breakpoint-up(large) {
+            padding: 0.875rem 0.875rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            // width: auto;
+          }
+
+          &::placeholder {
+            color: $brightRed;
+            font-size: 700;
+            font-size: 0.875rem;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          margin-left: 5px;
+          // width: 60px;
+          padding: 0.875rem 1.4rem !important;
+
+          &:hover {
+            opacity: 0.8 !important;
+          }
+        }
+      }
+
+      .message {
+        display: none;
+        @include breakpoint-up(large) {
+          display: block;
+          color: $brightRed;
+          font-size: 0.875rem;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .copy {
+    position: absolute;
+    color: $darkGrayishBlue;
+    font-size: 0.875rem;
+    bottom: 5%;
+    left: 20%;
+
+    @include breakpoint-up(medium) {
+      left: 35%;
+    }
+    @include breakpoint-up(large) {
+      color: $darkGrayishBlue;
+      position: absolute;
+      bottom: 10%;
+      left: 70%;
+      right: 10%;
+      font-size: 0.875rem;
+      margin-top: 45px;
+      margin-left: 40px;
+    }
+  }
+}

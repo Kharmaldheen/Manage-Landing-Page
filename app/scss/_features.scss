@@ -1,0 +1,129 @@
+.features {
+  margin-top: 6.5625rem;
+
+  @include breakpoint-up(large) {
+    margin-top: 7.5rem;
+    display: flex;
+    gap: 0 5rem;
+  }
+  &__text {
+    text-align: center;
+    padding: 0 0.625rem;
+    margin-bottom: 3.5rem;
+    @include breakpoint-up(large) {
+      padding: 0;
+      text-align: left;
+      margin-top: 0.1875rem;
+      flex: 1;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: $darkBlue;
+      font-size: 1.875rem;
+      margin-bottom: 1.5625rem;
+
+      @include breakpoint-up(large) {
+        font-size: 2.1875rem;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 2.1875rem;
+      }
+    }
+
+    p {
+      color: $darkGrayishBlue;
+      font-size: 0.875rem;
+      line-height: 2;
+      padding: 0 0.625rem;
+      @include breakpoint-up(large) {
+        text-align: left;
+        line-height: 1.5;
+        width: 60%;
+        font-size: 1rem;
+        padding: 0;
+      }
+    }
+  }
+
+  &__points {
+    @include breakpoint-up(large) {
+      flex: 1;
+    }
+
+    .point {
+      margin-bottom: 3.3125rem;
+      @include breakpoint-up(large) {
+        margin-bottom: 2.1875rem;
+      }
+
+      .head {
+        display: flex;
+        background-color: $veryPaleRed;
+        align-items: center;
+        gap: 0 0.875rem;
+
+        @include breakpoint-up(large) {
+          background-color: transparent;
+          display: flex;
+          align-items: normal;
+
+          gap: 0 1.5625rem;
+        }
+
+        &__btn {
+          background-color: $brightRed;
+          height: 2.5rem;
+          width: 4.375rem;
+          border-radius: 20px;
+          color: #fff;
+          padding-top: 0.6875rem;
+          padding-left: 1.5625rem;
+          font-size: 0.90625rem;
+          font-weight: 500;
+
+          @include breakpoint-up(large) {
+            text-align: center;
+
+            width: 3.9375rem;
+            padding-left: 0;
+            height: 2.25rem;
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 700;
+            border-radius: 1.875rem;
+            padding-top: 0.4375rem;
+          }
+        }
+
+        &__title {
+          color: $darkBlue;
+          font-size: 0.875rem;
+          padding-top: 0.6875rem;
+          font-weight: 700;
+
+          @include breakpoint-up(large) {
+            margin-top: 0.375rem;
+            padding-top: 0;
+          }
+        }
+      }
+
+      .head__text {
+        color: $darkGrayishBlue;
+        font-size: 0.875rem;
+        line-height: 2;
+        text-align: left;
+
+        @include breakpoint-up(large) {
+          width: 72%;
+          text-align: left;
+          margin-left: 5.5rem;
+          font-size: 0.875rem;
+          line-height: 1.7;
+          margin-top: -0.1875rem;
+        }
+      }
+    }
+  }
+}
